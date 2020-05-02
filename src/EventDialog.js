@@ -148,7 +148,9 @@ export default function EventDialog(props) {
             <div style={{ textAlign: "right", padding: "5px 5px 0 0" }}>
                 <HighlightOffIcon style={{ fontSize: 28, color: "b3adad" }} onClick={props.handleCancelClose}/>
             </div>
-          
+            {
+              //styles are written in the render due to the features of Material-UI
+            }
             <div style={{ padding: "0 15px 0 15px" }}>
                 <TextField
                     error={props.errors.name?true:false}
